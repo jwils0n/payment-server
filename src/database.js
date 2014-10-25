@@ -20,4 +20,6 @@ db.users = [
   { id: 15, fName: 'Shane', lName: 'Walsh', email: 'swalsh@jwilson.us' },
 ];
 
+db.payments = [];
+
 module.exports = db;
