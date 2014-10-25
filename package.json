@@ -1,0 +1,14 @@
+{
+  "name": "payment-server",
+  "version": "0.0.0",
+  "description": "Stubbed payment server for rapid prototyping",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jwils0n/payment-server.git"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "restify": "~2.8.3",
+    "lodash": "~2.4.1"
+  }
+}
