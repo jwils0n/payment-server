@@ -31,6 +31,7 @@ handlers.getPayment = function (req, res, next) {
 handlers.postPayment = function (req, res, next) {
   var payment = {
     id: db.payments.length + 1,
+    userId: _.sample(db.users).id,
     lastFour: req.params.ccNumber,
     expMonth: req.params.expMonth,
     expYear: req.params.expYear,
