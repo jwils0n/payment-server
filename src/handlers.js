@@ -16,6 +16,13 @@ handlers.getUser = function (req, res, next) {
   next();
 };
 
+handlers.removeUser = function (req, res, next) {
+  db.users = _.reject(db.users, { id: parseInt(req.params.id, 10) });
+
+  res.send(204);
+  next();
+};
+
 handlers.getPayments = function (req, res, next) {
   res.send(db.payments);
   next();
